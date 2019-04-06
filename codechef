@@ -1,0 +1,29 @@
+import java.util.*;
+public class Binary_Search{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int i,k=0,lb=0,ub=9,ns.p=0;
+int a[]=new int [10];
+System.out.println("Enter 10 numbers in ascending order");
+for(i=0;i<10;i++){
+a[i]=sc.nextInt();
+}
+System.out.println("Enter the number to be searched");
+ns=sc.nextint();
+while(lb<=ub){
+p=(lb+ub)/2;
+if(a[p]>ns)
+ub=p-1;
+if(a[p]<ns)
+lb=p+1;
+if(a[p]==ns){
+k=1;
+break;
+}
+}
+if(k==1)
+System.out.println("The number is present");
+else
+System.out.println("The number is not present");
+}
+}
